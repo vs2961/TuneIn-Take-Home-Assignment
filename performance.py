@@ -1,5 +1,6 @@
 import datetime
 import requests
+import os
 
 """
 Get the best performing day.
@@ -77,7 +78,7 @@ def populate_json(best_day, best_week):
 
 
 CSV_TO_PARSE = "./Take Home Assignment_Ad Systems Automation Intern (1).csv"
-WEBHOOK_URL = "https://hooks.slack.com/services/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"
+WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 
 if __name__ == '__main__':
     revenue_csv = open(CSV_TO_PARSE)
