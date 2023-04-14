@@ -71,7 +71,7 @@ REQUEST_JSON = {
     		"block_id": "section4",
     		"text": {
     			"type": "mrkdwn",
-    			"text": "Finally, here is the code that did the magic!\n"
+    			"text": "Finally, here is the code that did the magic! Please see the README for details.\n"
     		}
     	},
     ]
@@ -108,5 +108,3 @@ if __name__ == '__main__':
     # Send the slack message
     x = requests.post(WEBHOOK_URL, json=REQUEST_JSON)
     print(x.text)
-
-
